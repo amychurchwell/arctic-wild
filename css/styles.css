@@ -1,0 +1,84 @@
+html *{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  background-color: #000;
+}
+.container{
+  background-color: #ccc;
+}
+.header {
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  width:100%;
+  height: 500px;
+  align-items: center;
+  color: #fff;
+}
+
+.header h1{
+  padding-bottom: 16px;
+
+  border-bottom: 3px solid white;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.circle {
+  background-color: #ffffff91;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 40px solid #dc7725;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items:center;
+  padding: 0 10%;
+}
+
+li {
+  display: inline;
+}
+
+.gallery{
+  background-color: #ccc;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.four-pack{
+
+}
+.photo, .photo-large{
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  margin: 25px;
+  width: 90%;
+}
+
+button{
+  background-color: #dc7725;
+  color:white;
+  display: none;
+}
