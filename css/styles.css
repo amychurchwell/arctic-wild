@@ -5,9 +5,10 @@ body{
   margin:0;
   background-color: #000;
 }
-.container{
-  background-color: #ccc;
+.container, .container a{
+  color: #fff;
 }
+
 .header {
   background-image: url('../img/header.jpg');
   background-size: cover;
@@ -17,68 +18,135 @@ body{
   height: 500px;
   align-items: center;
   color: #fff;
+  padding-top: 10%;
 }
 
 .header h1{
   padding-bottom: 16px;
-
   border-bottom: 3px solid white;
   text-transform: uppercase;
   font-size: 60px;
   line-height: 1;
+  margin-top: 0;
 }
 
-.circle {
-  background-color: #ffffff91;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  position: relative;
+.header h2{
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-left: 40px solid #dc7725;
-  border-bottom: 20px solid transparent;
-  position: absolute;
-  top: 30%;
-  left: 35%;
+
+#logo{
+  margin-right: 10px;
 }
 
 .nav{
+  text-transform: uppercase;
+  font-style: normal;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   align-items:center;
-  padding: 0 10%;
+  padding: 0 5%;
 }
+ .nav img{
+   width:60px;
+ }
+
+ .circle {
+   background-color: #ffffff91;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   position: relative;
+ }
+
+ .triangle {
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+   border-left: 40px solid #dc7725;
+   border-bottom: 20px solid transparent;
+   position: absolute;
+   top: 30%;
+   left: 35%;
+ }
+
+ .nav li{
+   display: none;
+ }
 
 li {
   display: inline;
 }
 
 .gallery{
-  background-color: #ccc;
+  background-color: #d1d1c9;
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
   align-items: center;
+  padding: 20px;
 }
 .four-pack{
-
-}
-.photo, .photo-large{
-  background-color: burlywood;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.photo{
+
+  background-size: cover;
+  display: flex;
   height: 250px;
-  margin: 25px;
-  width: 90%;
+  margin: 20px;
+  padding: 25px;
+}
+
+.photo:nth-child(1){
+  background-image: url('../img/home-raft.jpg');
+  flex-basis: 400px;
+  flex-grow: 2;
+}
+.photo:nth-child(2){
+  background-image: url('../img/home-backpacking.jpg');
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+.photo:nth-child(3){
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+.photo:nth-child(4){
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+.photo:nth-child(5){
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+.photo:nth-child(6){
+  flex-basis: 400px;
+  flex-grow: 2;
+}
+
+.line {
+  width: 60px;
+  height: 5px;
+  background-color: #dc7725;
 }
 
 button{
   background-color: #dc7725;
   color:white;
   display: none;
+}
+h3 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 767px){
+  .photo {
+    margin: 0;
+  }
 }
