@@ -85,50 +85,42 @@ li {
   background-color: #d1d1c9;
   display: flex;
   flex-wrap: wrap;
+
   align-items: center;
   padding: 20px;
 }
-.four-pack{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.photo{
 
+.photo{
   background-size: cover;
+  background-position: center;
   display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 250px;
   margin: 20px;
   padding: 25px;
+  width: 85%;
 }
 
 .photo:nth-child(1){
   background-image: url('../img/home-raft.jpg');
-  flex-basis: 400px;
-  flex-grow: 2;
 }
 .photo:nth-child(2){
-  background-image: url('../img/home-backpacking.jpg');
-  flex-basis: 400px;
-  flex-grow: 1;
+  background-image: url('../img/home-basecamp.jpg');
 }
 .photo:nth-child(3){
-  flex-basis: 400px;
-  flex-grow: 1;
+  background-image: url('../img/home-backpacking.jpg');
 }
 .photo:nth-child(4){
-  flex-basis: 400px;
-  flex-grow: 1;
+  background-image: url('../img/home-canoe.jpg');
 }
 .photo:nth-child(5){
-  flex-basis: 400px;
-  flex-grow: 1;
+  background-image: url('../img/home-photo.jpg');
 }
 .photo:nth-child(6){
-  flex-basis: 400px;
-  flex-grow: 2;
+  background-image: url('../img/home-custom.jpg');
 }
-
 .line {
   width: 60px;
   height: 5px;
@@ -148,5 +140,13 @@ h3 {
 @media screen and (min-width: 767px){
   .photo {
     margin: 0;
+    width: 50%;
+  }
+  .photo:nth-child(1), .photo:nth-child(6){
+    width: 100%;
+  }
+  .gallery{
+    padding: 0;
+
   }
 }
