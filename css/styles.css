@@ -1,14 +1,13 @@
 html *{
   box-sizing: border-box;
 }
-body{
+body {
   margin:0;
   background-color: #000;
 }
-.container, .container a{
+.container, .container a {
   color: #fff;
 }
-
 .header {
   background-image: url('../img/header.jpg');
   background-size: cover;
@@ -20,8 +19,7 @@ body{
   color: #fff;
   padding-top: 10%;
 }
-
-.header h1{
+.header h1 {
   padding-bottom: 16px;
   border-bottom: 3px solid white;
   text-transform: uppercase;
@@ -29,19 +27,15 @@ body{
   line-height: 1;
   margin-top: 0;
 }
-
-.header h2{
+.header h2 {
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
-
 #logo{
   margin-right: 10px;
 }
-
 .nav{
   text-transform: uppercase;
   font-style: normal;
@@ -50,10 +44,9 @@ body{
   align-items:center;
   padding: 0 5%;
 }
- .nav img{
+ .nav img {
    width:60px;
  }
-
  .circle {
    background-color: #ffffff91;
    height: 100px;
@@ -61,7 +54,6 @@ body{
    border-radius: 50%;
    position: relative;
  }
-
  .triangle {
    width: 0;
    height: 0;
@@ -72,24 +64,34 @@ body{
    top: 30%;
    left: 35%;
  }
-
  .nav li{
    display: none;
  }
-
 li {
   display: inline;
 }
-
 .gallery{
   background-color: #d1d1c9;
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   padding: 20px;
 }
 
+.gallery .circle{
+  background-color: #343433de;
+  align-self: center;
+  position: relative;
+  height: 70px;
+  width:70px
+}
+
+.circle img {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
 .photo{
   background-size: cover;
   background-position: center;
@@ -102,7 +104,6 @@ li {
   padding: 25px;
   width: 85%;
 }
-
 .photo:nth-child(1){
   background-image: url('../img/home-raft.jpg');
 }
@@ -126,8 +127,7 @@ li {
   height: 5px;
   background-color: #dc7725;
 }
-
-button{
+button {
   background-color: #dc7725;
   color:white;
   display: none;
@@ -136,10 +136,10 @@ h3 {
   text-transform: uppercase;
   font-family: sans-serif;
 }
-
 @media screen and (min-width: 767px){
   .photo {
     margin: 0;
+    height: 420px;
     width: 50%;
   }
   .photo:nth-child(1), .photo:nth-child(6){
@@ -147,6 +147,10 @@ h3 {
   }
   .gallery{
     padding: 0;
-
+  }
+  .gallery .circle{
+    margin-bottom: 10%;
+    height: 100px;
+    width: 100px;
   }
 }
